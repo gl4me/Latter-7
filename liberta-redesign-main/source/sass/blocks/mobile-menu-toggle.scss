@@ -1,0 +1,50 @@
+.mobile-menu-toggle {
+  height: 30px;
+  width: 30px;
+  position: relative;
+
+  &__icon {
+    top: calc(50% - 1px);
+  }
+
+  &__icon,
+  &::before,
+  &::after {
+    position: absolute;
+    height: 2px;
+    width: 24px;
+    left: 0;
+    background-color: currentColor;
+    transition: transform $transition-base, top $transition-base,
+      bottom $transition-base;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+  }
+
+  &::before {
+    top: 6px;
+  }
+
+  &::after {
+    bottom: 6px;
+  }
+
+  &--opened &__icon {
+    opacity: 0;
+  }
+
+  &--opened {
+    &::before {
+      top: calc(50% - 1px);
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      bottom: calc(50% - 1px);
+      transform: rotate(-45deg);
+    }
+  }
+}

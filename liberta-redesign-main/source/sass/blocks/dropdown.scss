@@ -1,0 +1,26 @@
+.dropdown {
+  &-toggle {
+    font-weight: inherit;
+
+    &::after {
+      vertical-align: middle;
+      transition: $transition-base;
+    }
+  }
+
+  &-menu {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  &-item {
+    font-weight: inherit;
+    transition: $transition-base;
+  }
+
+  &.show &-toggle {
+    &::after {
+      transform: scaleY(-1);
+    }
+  }
+}
+

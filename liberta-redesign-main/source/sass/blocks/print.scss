@@ -1,0 +1,30 @@
+@media print {
+  // pages-product
+    main,
+    .subscribe,  
+    .header__top,
+    .modal-product .modal-footer,
+    .modal-product .modal-body .product__print span,
+  // user-orders 
+    .footer,
+    .pagination {
+        display: none;
+      }
+      
+
+    .modal .modal-dialog {
+      min-height: calc(60% - (2rem*2));
+    }
+
+    .modal-product .modal-body .product__warning {
+      padding: 0 150px;
+      text-align: center;
+    }
+
+    @media (min-width: 576px) {
+        .modal-dialog {
+            max-width: 90%;
+            margin: 1.75rem auto;
+        }
+    }   
+  }

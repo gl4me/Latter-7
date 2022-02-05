@@ -1,0 +1,43 @@
+.mirrors-smart-advantages {
+  &__descr {
+    font-size: 1.5rem;
+  }
+
+  &__item {
+    line-height: 1.8;
+
+    &-title {
+      font-size: 2rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .mirrors-smart-advantages {
+    &__item {
+      &-title {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .mirrors-smart-advantages {
+    &__descr {
+      font-size: 1rem;
+    }
+
+    &__item {
+      text-align: center;
+
+      img {
+        height: 72px;
+      }
+
+      &-title {
+        font-size: 20px;
+      }
+    }
+  }
+}

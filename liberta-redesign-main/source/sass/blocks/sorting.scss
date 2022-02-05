@@ -1,0 +1,10 @@
+.sorting {
+  &__selected {
+    &-group {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2px 8px;
+    }
+  }
+}

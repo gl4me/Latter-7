@@ -1,0 +1,11 @@
+.form-control {
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+textarea {
+  &.form-control {
+    resize: none;
+  }
+}

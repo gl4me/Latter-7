@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Сервисный центр – производство зеркал и стеклянных изделий Liberta</title>
+  <meta name="description" content="Сервисный центр украинского производителя, фабрика стекла Liberta.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preload" href="fonts/roboto-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/KievitPro-ExtraBold.woff2" as="font" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <include src="source/include/popup-info-up.html"></include>
+
+  <header class="header">
+    <include src="source/include/header.html"></include>
+  </header>
+
+  <main class="service">
+    <section class="service__intro pt-20p pt-xl-0">
+      <div class="container">
+        <nav aria-label="breadcrumb" class="d-none d-xl-block">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Сервисный центр – производство зеркал и стеклянных
+              изделий Liberta</li>
+          </ol>
+        </nav>
+        <h1>Сервисный центр Liberta</h1>
+        <ul class="row list-unstyled mt-xl-60p mt-40p mb-0">
+          <li class="col-sm-auto d-flex align-items-center">
+            <img class="img-fluid mr-2" src="//liberta.ua/img/phone-icon.png" alt="">
+            <div>
+              <span class="d-block fs-14">Телефон:</span>
+              <a class="text-dark fs-18 font-weight-500 text-decoration-none"
+                href="tel:+380965051030">+38(096)505-10-30</a>
+            </div>
+          </li>
+          <li class="col-sm-auto offset-lg-1 mt-20p mt-sm-0 d-flex align-items-center">
+            <img class="img-fluid mr-2" src="//liberta.ua/img/mail-icon.png" alt="">
+            <div>
+              <span class="d-block fs-14">Эл. почта:</span>
+              <a class="fs-18 font-weight-500 text-decoration-none"
+                href="mailto:help@liberta.com.ua">help@liberta.com.ua</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="container pt-md-20p pt-30p">
+      <div class="row">
+        <div class="col-xl-8">
+          <form>
+            <fieldset class="service__step service__step--first active">
+              <div class="d-flex align-items-baseline flex-wrap flex-sm-nowrap mb-3">
+                <legend class="service__step-title h2 mb-0">Ваши контактные данные</legend>
+                <button type="button"
+                  class="btn-unstyled text-primary fs-14 ml-sm-3 mt-2 mt-sm-0">Редактировать</button>
+              </div>
+              <div class="service__step-content">
+                <div class="form-group form-row">
+                  <label for="order-number" class="col-md-3 col-form-label fs-14">Номер заказа <span
+                      class="text-muted">*</span></label>
+                  <div class="col-md-6">
+                    <input type="text" id="order-number" class="form-control" required>
+                    <div class="fs-12 text-muted">Номер - указан в техпаспорте изделия</div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="col-form-label invalid-feedback mt-0">Неверный номер заказа</div>
+                  </div>
+                </div>
+                <div class="form-group form-row">
+                  <label for="name" class="col-md-3 col-form-label fs-14">Имя и фамилия <span
+                      class="text-muted">*</span></label>
+                  <div class="col-md-6">
+                    <input type="text" id="name" class="form-control" required>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="col-form-label invalid-feedback mt-0">Введите имя и фамилию</div>
+                  </div>
+                </div>
+                <div class="form-group form-row">
+                  <label for="phone" class="col-md-3 col-form-label fs-14">Телефон <span
+                      class="text-muted">*</span></label>
+                  <div class="col-md-6">
+                    <input type="text" id="phone" class="form-control" placeholder="+38 ( xxx ) xxx-xx-xx" required>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="col-form-label invalid-feedback mt-0">Введите Ваш телефон</div>
+                  </div>
+                </div>
+                <div class="form-group form-row">
+                  <label class="col-md-3 col-form-label fs-14">Город</label>
+                  <div class="col-md-6">
+                    <select class="select-two" style="width: 100%" data-placeholder="Введите город">
+                      <option></option>
+                      <option>м. Луцьк (Волинська обл.)</option>
+                      <option>м. Лубни (Полтавська обл.)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 offset-md-3">
+                    <button class="btn btn-primary" type="submit">Далее</button>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <!-- add .active to show second step -->
+            <fieldset class="active service__step service__step--second">
+              <legend class="service__step-title h2">Особенности изделия</legend>
+              <div class="service__step-content">
+                <div class="form-group form-row align-items-center">
+                  <label class="col-md-3 col-form-label fs-14">Пломба производителя</label>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="seal-no" name="Repair[seal]" class="custom-control-input">
+                          <label class="custom-control-label" for="seal-no">Нарушена</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="seal-yes" name="Repair[seal]" class="custom-control-input" checked>
+                          <label class="custom-control-label" for="seal-yes">Не нарушена</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group form-row align-items-center">
+                  <label class="col-md-3 col-form-label fs-14">Оригинальная упаковка</label>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="packaging-yes" name="Repair[packaging]" class="custom-control-input"
+                            checked>
+                          <label class="custom-control-label" for="packaging-yes">Есть</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="packaging-no" name="Repair[packaging]" class="custom-control-input">
+                          <label class="custom-control-label" for="packaging-no">Нет</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group form-row align-items-center">
+                  <label class="col-md-3 col-form-label fs-14">Паспорт на изделие</label>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="passport-yes" name="Repair[passport]" class="custom-control-input"
+                            checked>
+                          <label class="custom-control-label" for="passport-yes">Есть</label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="passport-no" name="Repair[passport]" class="custom-control-input">
+                          <label class="custom-control-label" for="passport-no">Нет</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group form-row">
+                  <label for="text-input" class="col-md-3 col-form-label fs-14">Описание поломки</label>
+                  <div class="col-md-6">
+                    <textarea class="form-control" name="Repair[description]" id="text-input" rows="3"></textarea>
+                    <label class="text-primary fs-12 font-weight-500 cursor-pointer mt-2">
+                      <input type="file" class="sr-only js-file-input" multiple="">
+                      <span class="fs-12">Прикрепить фото <br></span>
+                    </label>
+                    <div class="js-unloading text-dark fs-12 font-weight-bold">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-9 text-right">
+                    <button type="submit" class="btn btn-secondary btn-lg">Отправить заявку</button>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <include src="source/include/footer.html"></include>
+
+  <script src="js/scripts.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.select-two').select2();
+    });
+  </script>
+</body>
+
+</html>

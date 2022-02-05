@@ -1,0 +1,19 @@
+.pagination {
+  font-weight: 500;
+  font-size: 18px;
+
+  .page-link {
+    min-width: 38px;
+    border-radius: 50% !important;
+    text-align: center;
+    transition: $transition-base;
+  }
+
+  .page-item {
+    &.active {
+      .page-link {
+        z-index: auto;
+      }
+    }
+  }
+}

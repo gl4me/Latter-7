@@ -1,0 +1,34 @@
+.btn-toggle {
+  color: $primary;
+  font-weight: 500;
+  padding-right: 12px;
+  position: relative;
+  transition: $transition-base;
+
+  &:hover,
+  &:focus {
+    color: darken($primary, 15%);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    margin-top: -4px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform-origin: 66% 66%;
+    transform: rotate(45deg);
+    pointer-events: none;
+    transition: $transition-base;
+  }
+
+  &.active {
+    &::after {
+      transform: rotate(225deg);
+    }
+  }
+}

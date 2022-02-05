@@ -1,0 +1,148 @@
+.mobile-nav {
+  position: fixed;
+  z-index: 16;
+  left: 0;
+  top: 48px;
+  height: calc(100% - 48px);
+  width: 35%;
+  visibility: hidden;
+  background-color: #fff;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.4s 0s, visibility 0s 0.4s;
+
+  &--opened {
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 0.4s 0s, visibility 0s 0s;
+  }
+
+  &__list {
+    &-item {
+      > a {
+        display: block;
+        padding: 10px 15px;
+        color: inherit;
+        font-size: 14px;
+      }
+
+      &--opened {
+        > .mobile-nav__submenu-toggle {
+          &::after {
+            transform: rotate(225deg);
+          }
+        }
+      }
+    }
+
+    &--catalog &-item {
+      display: flex;
+      flex-wrap: wrap;
+
+      > a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        order: -1;
+      }
+    }
+
+    &--catalog > &-item {
+      border-bottom: 2px solid $light;
+
+      > a {
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        flex-grow: 1;
+      }
+    }
+
+    &--phones &-item {
+      > a {
+        font-weight: 500;
+      }
+
+      > span {
+        display: block;
+        padding: 10px 15px;
+      }
+    }
+  }
+
+  &__submenu {
+    width: 100%;
+    display: none;
+
+    &-toggle {
+      flex-shrink: 0;
+      width: 52px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::after {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-bottom: 2px solid currentColor;
+        border-right: 2px solid currentColor;
+        transform-origin: 66% 66%;
+        transform: rotate(45deg);
+        transition: $transition-base;
+      }
+
+      & ~ a {
+        max-width: calc(100% - 52px);
+      }
+    }
+
+    > li {
+      > a {
+        display: block;
+        padding: 8px 15px;
+        color: inherit;
+        font-size: 14px;
+
+        &:not([href]) {
+          color: $text-muted;
+        }
+      }
+    }
+
+    &--l1 {
+      padding-bottom: 10px;
+
+      > li {
+        > a {
+          padding-left: 30px;
+        }
+
+        .mobile-nav__submenu-toggle {
+          width: 30px;
+          color: $text-muted;
+
+          & ~ a {
+            max-width: calc(100% - 30px);
+          }
+        }
+      }
+    }
+
+    &--l2 {
+      > li {
+        > a {
+          padding-left: 45px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .mobile-nav {
+    width: 100%;
+  }
+}

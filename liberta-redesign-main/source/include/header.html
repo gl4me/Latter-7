@@ -1,0 +1,296 @@
+<div class="header__top-wrapper">
+  <div class="header__top">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-auto col-sm">
+          <div class="row align-items-center">
+            <div class="col-auto d-block d-xl-none">
+              <button type="button" class="btn-unstyled mobile-menu-toggle">
+                <span class="mobile-menu-toggle__icon"></span>
+              </button>
+            </div>
+            <div class="col-auto d-none d-xl-block">
+              <div class="dropdown">
+                <button class="btn-unstyled dropdown-toggle" type="button" id="showrooms" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <svg class="align-baseline" width="14" height="14" fill="currentColor" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#map-mark"></use>
+                  </svg>
+                  Адреса шоурумов
+                </button>
+                <div class="dropdown-menu fs-14" aria-labelledby="showrooms">
+                  <a class="dropdown-item" href="/dnepr">Днепр</a>
+                  <a class="dropdown-item" href="/kyiv">Киев</a>
+                  <a class="dropdown-item" href="/kharkov">Харьков</a>
+                  <a class="dropdown-item" href="/odessa">Одесса</a>
+                  <a class="dropdown-item" href="/lviv">Львов</a>
+                  <a class="dropdown-item" href="/showrooms">УКРАИНА</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto d-none d-xl-block">
+              <a href="/service-center">Сервисный центр</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto text-center">
+          <a href="/" class="d-block">
+            <img class="header__logo img-fluid d-none d-xl-block mx-auto" src="//liberta.ua/img/svg/logo.svg" alt="Liberta logo">
+            <img class="header__logo header__logo--m img-fluid d-xl-none" src="//liberta.ua/img/svg/logo_mob.svg" alt="Liberta logo">
+          </a>
+        </div>
+        <div class="col-auto col-sm header__top-right">
+          <div class="row align-items-center justify-content-end flex-nowrap">
+            <div class="header__phone col-auto d-none d-xl-block">
+              <div class="dropdown">
+                <a class="dropdown-toggle" href="tel:+380673265980" role="button" id="phones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  +38(067) 326-59-80
+                </a>
+                <div class="dropdown-menu fs-14" aria-labelledby="phones">
+                  <a class="dropdown-item" href="tel:+380501005980">+38(050) 100-59-80</a>
+                  <a class="dropdown-item" href="tel:+380931701347">+38(093) 170-13-47</a>
+                  <span class="d-block text-center fs-16">Отдел нестандартов:</span>
+                  <a class="dropdown-item" href="tel:+380500155090">+38(050) 015 50 90</a>
+                  <a class="dropdown-item" href="tel:+380970155090">+38(097) 015 50 90</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <form action="/search" le="search" class="search-form">
+                <button type="button" class="search-form__toggle btn-unstyled">
+                  <svg width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+                <input type="search" name="q" class="search-form__field" placeholder="Поиск по сайту" autocomplete="off" value="">
+              </form>
+            </div>
+            <div class="col-auto">
+              <!-- чтобы сделать ссылку неактивной - убираем href -->
+              <a class="cart-link" href="/cart">
+                <svg width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#cart"></use>
+                </svg>
+                <span id="cart-count" class="cart-link__count">1</span>
+              </a>
+            </div>
+            <div class="col-auto d-none d-xl-block">
+              <a class="profile-link" href="#">
+                <svg width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#user"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header__languages col-auto d-none d-xl-block">
+              <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" id="languages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  RU
+                </a>
+                <div class="dropdown-menu dropdown-menu-right fs-14" aria-labelledby="languages">
+                  <a class="dropdown-item" href="#">UA</a>
+                  <a class="dropdown-item" href="#">EN</a>
+                  <a class="dropdown-item" href="#">DE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header__nav-wrapper d-none d-xl-block">
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="main-nav__list list-unstyled mb-0">
+        <li class="main-nav__list-item has-children mirrors">
+          <a href="/mirrors">Зеркала</a>
+          <div class="main-nav__categories">
+            <div class="container">
+              <ul class="main-nav__categories-menu row list-unstyled mb-0">
+                <li class="col-xl-2">
+                  <span class="fs-16 text-body font-weight-500">Коллекция</span>
+                  <ul class="main-nav__categories-submenu list-unstyled mb-0">
+                    <li><a href="/mirrors-art">ART</a></li>
+                    <li><a href="/mirrors-smart">Smart</a></li>
+                    <li><a href="/mirrors-royal">Royal</a></li>
+                    <li><a href="/mirrors-deluxe">Deluxe</a></li>
+                    <li><a href="/mirrors-premio">Premio</a></li>
+                    <li><a href="/mirrors-standart">Standart</a></li>
+                    <li><a href="/mirrors-new">НОВИНКИ</a></li>
+                  </ul>
+                </li>
+                <li class="col-xl-2">
+                  <span class="fs-16 text-body font-weight-500">Место размещения</span>
+                  <ul class="main-nav__categories-submenu list-unstyled mb-0">
+                    <li><a href="/mirrors-bathroom">Ванная</a></li>
+                    <li><a href="/mirrors-lobby">Прихожая</a></li>
+                    <li><a href="/mirrors-livingroom">Гостинная</a></li>
+                    <li><a href="/mirrors-bedroom">Спальня</a></li>
+                    <li><a href="/mirrors-makeup">Салон красоты</a></li>
+                    <li><a href="/mirrors-kids">Детская</a></li>
+                  </ul>
+                </li>
+                <li class="col-xl-2">
+                  <span class="fs-16 text-body font-weight-500">Форма</span>
+                  <ul class="main-nav__categories-submenu list-unstyled mb-0">
+                    <li><a href="/mirrors-rectangular">Прямоугольные</a></li>
+                    <li><a href="/mirrors-square">Квадратные</a></li>
+                    <li><a href="/mirrors-rounded">Закругленные</a></li>
+                    <li><a href="/mirrors-ovals">Овальные</a></li>
+                    <li><a href="/mirrors-circle">Круглые</a></li>
+                  </ul>
+                </li>
+                <li class="col-xl-4">
+                  <span class="fs-16 text-body font-weight-500">Дополнительные опции</span>
+                  <ul class="main-nav__categories-submenu list-unstyled mb-0">
+                    <li><a href="/mirrors-withillumination">С подсветкой</a></li>
+                    <li><a href="/mirrors-withoutillumination">Без подсветки</a></li>
+                    <li><a href="/mirrors-svetilnik">Светильник</a></li>
+                    <li><a href="/mirrors-polka">Полка</a></li>
+                    <li><a href="/mirrors-linza">Линза</a></li>
+                    <li><a href="/mirrors-clock">Часы</a></li>
+                    <li><a href="/mirrors-aluminum">Металлическая рама</a></li>
+                    <li><a href="/mirrors-med">Медиа</a></li>
+                    <li><a href="/mirrors-instock">В наличии</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="main-nav__list-item has-children">
+          <a href="/showers">Душевые кабины</a>
+          <div class="main-nav__categories">
+            <div class="container">
+              <ul class="main-nav__categories-menu row justify-content-center list-unstyled mb-0">
+                <li class="col-xl-2">
+                  <a href="/showers-cabins">Угловые кабины</a>
+                </li>
+                <li class="col-xl-2">
+                  <a href="/showers-door">Двери для душа</a>
+                </li>
+                <li class="col-xl-2">
+                  <a href="/showers-partitions">Перегородки для душа</a>
+                </li>
+                <li class="col-xl-2">
+                  <a href="/showers-curtains">Шторки для ванной</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="main-nav__list-item">
+          <a href="/doors">Межкомнатные двери</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a href="/sliding">Раздвижные системы</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="mobile-menu d-xl-none">
+  <div class="mobile-nav bg-white">
+    <ul class="mobile-nav__list mobile-nav__list--catalog list-unstyled">
+      <li class="mobile-nav__list-item">
+        <button type="button" class="mobile-nav__submenu-toggle btn-unstyled"></button>
+        <a href="/mirrors">Зеркала</a>
+        <ul class="mobile-nav__submenu mobile-nav__submenu--l1 list-unstyled">
+          <li class="mobile-nav__list-item">
+            <button type="button" class="mobile-nav__submenu-toggle btn-unstyled"></button>
+            <a>Коллекция</a>
+            <ul class="mobile-nav__submenu mobile-nav__submenu--l2 list-unstyled">
+              <li><a href="/mirrors-art">ART</a></li>
+              <li><a href="/mirrors-smart">Smart</a></li>
+              <li><a href="/mirrors-royal">Royal</a></li>
+              <li><a href="/mirrors-deluxe">Deluxe</a></li>
+              <li><a href="/mirrors-premio">Premio</a></li>
+              <li><a href="/mirrors-standart">Standart</a></li>
+              <li><a href="/mirrors-new">НОВИНКИ</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav__list-item">
+            <button type="button" class="mobile-nav__submenu-toggle btn-unstyled"></button>
+            <a>Место размещения</a>
+            <ul class="mobile-nav__submenu mobile-nav__submenu--l2 list-unstyled">
+              <li><a href="/mirrors-bathroom">Ванная</a></li>
+              <li><a href="/mirrors-lobby">Прихожая</a></li>
+              <li><a href="/mirrors-livingroom">Гостинная</a></li>
+              <li><a href="/mirrors-bedroom">Спальня</a></li>
+              <li><a href="/mirrors-makeup">Салон красоты</a></li>
+              <li><a href="/mirrors-kids">Детская</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav__list-item">
+            <button type="button" class="mobile-nav__submenu-toggle btn-unstyled"></button>
+            <a>Форма</a>
+            <ul class="mobile-nav__submenu mobile-nav__submenu--l2 list-unstyled">
+              <li><a href="/mirrors-rectangular">Прямоугольные</a></li>
+              <li><a href="/mirrors-square">Квадратные</a></li>
+              <li><a href="/mirrors-rounded">Закругленные</a></li>
+              <li><a href="/mirrors-ovals">Овальные</a></li>
+              <li><a href="/mirrors-circle">Круглые</a></li>
+            </ul>
+          </li>
+          <li class="mobile-nav__list-item">
+            <button type="button" class="mobile-nav__submenu-toggle btn-unstyled"></button>
+            <a>Дополнительные опции</a>
+            <ul class="mobile-nav__submenu mobile-nav__submenu--l2 list-unstyled">
+              <li><a href="/mirrors-withillumination">С подсветкой</a></li>
+              <li><a href="/mirrors-withoutillumination">Без подсветки</a></li>
+              <li><a href="/mirrors-svetilnik">Светильник</a></li>
+              <li><a href="/mirrors-polka">Полка</a></li>
+              <li><a href="/mirrors-linza">Линза</a></li>
+              <li><a href="/mirrors-clock">Часы</a></li>
+              <li><a href="/mirrors-aluminum">Металлическая рама</a></li>
+              <li><a href="/mirrors-med">Медиа</a></li>
+              <li><a href="/mirrors-instock">В наличии</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="mobile-nav__list-item">
+        <button type="button" class="mobile-nav__submenu-toggle btn-unstyled"></button>
+        <a href="/showers">Душевые</a>
+        <ul class="mobile-nav__submenu mobile-nav__submenu--l1 list-unstyled">
+          <li>
+            <a href="/showers-cabins">Угловые кабины</a>
+          </li>
+          <li>
+            <a href="/showers-door">Двери для душа</a>
+          </li>
+          <li>
+            <a href="/showers-partitions">Перегородки для душа</a>
+          </li>
+          <li>
+            <a href="/showers-curtains">Шторки для ванной</a>
+          </li>
+        </ul>
+      </li>
+      <li class="mobile-nav__list-item">
+        <a href="/doors">Межкомнатные двери</a>
+      </li>
+      <li class="mobile-nav__list-item">
+        <a href="/sliding">Раздвижные системы</a>
+      </li>
+    </ul>
+    <ul class="mobile-nav__list mobile-nav__list--pages list-unstyled">
+      <li class="mobile-nav__list-item"><a href="/about-us">О компании</a></li>
+      <li class="mobile-nav__list-item"><a href="/showrooms">Адреса шоурумов</a></li>
+      <li class="mobile-nav__list-item"><a href="/service-center">Сервисный центр</a></li>
+      <li class="mobile-nav__list-item"><a href="/payment-and-delivery">Доставка и оплата</a></li>
+      <li class="mobile-nav__list-item"><a href="/garranty-and-return">Гарантия и возврат</a></li>
+      <li class="mobile-nav__list-item"><a href="/blog">Блог</a></li>
+      <li class="mobile-nav__list-item"><a href="/contacts">Контактная информация</a></li>
+      <li class="mobile-nav__list-item"><a href="/mission">Социальная миссия</a></li>
+    </ul>
+    <ul class="mobile-nav__list mobile-nav__list--phones list-unstyled">
+      <li class="mobile-nav__list-item"><a href="tel:+380673265980">+38(067) 326-59-80</a></li>
+      <li class="mobile-nav__list-item"><a href="tel:+380501005980">+38(050) 100-59-80</a></li>
+      <li class="mobile-nav__list-item"><a href="tel:+380931701347">+38(093) 170-13-47</a></li>
+      <li class="mobile-nav__list-item"><span>Отдел нестандартов:</span></li>
+      <li class="mobile-nav__list-item"><a href="tel:+380500155090">+38(050) 015 50 90</a></li>
+      <li class="mobile-nav__list-item"><a href="tel:+380970155090">+38(097) 015 50 90</a></li>
+    </ul>
+  </div>
+</div>

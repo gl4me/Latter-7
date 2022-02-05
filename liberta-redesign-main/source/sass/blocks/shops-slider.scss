@@ -1,0 +1,29 @@
+.shops-slider {
+  .slick-track {
+    margin-left: 0;
+  }
+
+  .slick-list {
+    margin: 0 -8px;
+  }
+
+  .slick-slide {
+    margin: 0 8px;
+  }
+
+  &__item {
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 16px;
+
+    &-name {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    &-adress {
+      margin-top: 6px;
+      font-size: 12px;
+    }
+  }
+}

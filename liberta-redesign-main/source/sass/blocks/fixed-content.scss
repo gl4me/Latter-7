@@ -1,0 +1,134 @@
+.fixed-content {
+
+  .metering-icon {
+    position: fixed !important;
+    z-index: 1000 !important;
+    bottom: 167px;
+    right: 50%;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #eaeaea;
+    background-color:transparent;
+    border-radius: 50%;
+    background-color: #e9416d;
+  
+    &:hover {
+      animation: shake3 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      z-index: 1001 !important;
+    }
+    
+    .flip-img {
+      width: 34px;
+      height: 34px;
+    }
+  
+  }
+
+    .whatsapp-icon {
+        position: fixed !important;
+        bottom: 11%;
+        right: 1%;
+        z-index: 1000 !important;
+
+        &:hover {
+            animation: shake3 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+            transform: translate3d(0, 0, 0);
+            z-index: 1001 !important;
+        }
+    }
+
+    .telegram-icon {
+      position: fixed !important;
+      bottom: 9%;
+      right: 4%;
+      z-index: 1000 !important;
+
+        &:hover {
+          animation: shake3 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          transform: translate3d(0, 0, 0);
+          z-index: 1001 !important;
+        }
+    }   
+    .viber-icon {
+        position: fixed !important;
+        bottom: 7%;
+        right: 2%;
+        z-index: 1000 !important;
+
+         &:hover {
+            animation: shake3 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+            transform: translate3d(0, 0, 0);
+            z-index: 1001 !important;
+        }
+    }
+    .gif-man {
+      display: block;
+      width: 300px;
+      position: fixed;
+      bottom: -1px;
+      border: 0;
+      background: transparent;
+      outline: 0px auto -webkit-focus-ring-color;
+      left: 159px;
+      cursor: pointer;
+      z-index: 99;
+       img {
+        width: 100%;
+        height: auto;
+    }
+  }
+
+}
+
+
+@keyframes shake3 {
+  10%, 90% {transform: translate3d(3px, 0, 0)}
+  20%, 80% {transform: translate3d(4px, 0, 0)}
+  30%, 50%, 70% {transform: translate3d(2px, 0, 0)}
+  40%, 60% {transform: translate3d(5px, 0, 0)}
+}
+ 
+
+@media (max-width: 1279px) and (min-width: 320px) {
+
+.fixed-content {
+  .whatsapp-icon {
+    right: 2px;
+    bottom: 106px;
+    img {
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  .telegram-icon {
+    right: 8px;
+    bottom: 60px;
+    img {
+      width: 42px;
+      height: 42px;
+    }
+  } 
+
+  .viber-icon {
+    right: 5px;
+    bottom: 5px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+  

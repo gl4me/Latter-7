@@ -1,0 +1,135 @@
+.filter {
+  background-color: #fff;
+  position: sticky;
+  top: 40px;
+  z-index: 3;
+
+  &__inner {
+    padding: 12px 30px;
+    border: 1px solid $input-border-color;
+    color: $secondary;
+    font-weight: 500;
+  }
+
+  .dropdown-toggle {
+    color: inherit;
+  }
+
+  .dropdown-menu {
+    padding: 22px 30px 12px;
+    margin-left: -30px;
+    margin-top: 14px;
+    border-radius: 0;
+  }
+
+  .dropdown-item {
+    padding: 0.5rem 0;
+
+    .custom-control-label {
+      font-weight: 300;
+      cursor: pointer;
+    }
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+
+  &__search {
+    display: flex;
+    max-width: 240px;
+    border-bottom: 1px solid transparent;
+    transition: $transition-base;
+    
+
+    &:focus-within {
+      border-color: $secondary;
+    }
+
+    &-submit {
+      color: $secondary;
+      width: 26px;
+      flex-shrink: 0;
+
+      svg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &-field {
+      border: 0;
+      font-weight: inherit;
+      background-color: transparent;
+      color: $secondary;
+      flex-grow: 1;
+
+      &::placeholder {
+        color: $secondary;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &--top {
+    box-shadow: $box-shadow;
+  }
+
+  &--top &__inner {
+    border-color: transparent;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .filter {
+    top: 46px;
+
+    &__search {
+      margin-left: auto;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .filter {
+    &__search {
+      position: absolute;
+      right: 0;
+      top: -13px;
+      width: 26px;
+      overflow: hidden;
+      transition: width 0.3s ease;     
+
+      &.active-search {
+        position:static;
+        width: auto;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .filter {
+    position: relative;
+    top: 0;
+    &__inner {
+      position: relative;
+    }
+
+    &__params {
+      position: static;
+    }
+  }
+}
+
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+

@@ -1,0 +1,316 @@
+.smart-category {
+  &__section-animated {
+    padding-top: 95px;
+    min-height: 585px;
+
+    h2 {
+      font-size: 72px;
+      line-height: 1;
+    }
+
+    p {
+      opacity: 0;
+      position: relative;
+      line-height: 1.8;
+
+      &.txtFadeIn {
+        opacity: 1;
+        animation: fadein 1s;
+      }
+    }
+
+    .reveal {
+      width: 0;
+      position: relative;
+      color: transparent;
+      overflow: hidden;
+      transition: 0.5s ease;
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 0;
+        background-color: $body-color;
+        transition: 0.5s ease;
+      }
+    }
+
+    .printing {
+      .reveal {
+        &::before {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+
+    .printed {
+      .reveal {
+        color: inherit;
+
+        &::before {
+          right: 0;
+        }
+      }
+    }
+
+    .section-parallax__bg {
+      height: 884px;
+    }
+
+    &.text-white {
+      .reveal {
+        &::before {
+          background-color: #fff;
+        }
+      }
+
+      .section-parallax__bg {
+        background-color: $dark;
+      }
+    }
+
+    &.high-tech {
+      .section-parallax__bg {
+        background-image: url('../../img/bg/smart-bg-0.jpg');
+      }
+    }
+
+    &.combination {
+      .section-parallax__bg {
+        height: 792px;
+        background-image: url('../../img/bg/smart-bg-1.jpg');
+      }
+    }
+
+    &.health {
+      .section-parallax__bg {
+        background-image: url('../../img/bg/smart-bg-2.jpg');
+      }
+    }
+
+    &.resist {
+      .section-parallax__bg {
+        background-image: url('../../img/bg/smart-bg-4.jpg');
+      }
+    }
+
+    &.media {
+      .section-parallax__bg {
+        background-image: url('../../img/bg/smart-bg-5.jpg');
+      }
+    }
+
+    &.google-play {
+      a {
+        border-radius: 30px;
+        padding-left: 35px;
+        background-color: #121212;
+        max-width: 230px;
+        transition: $transition-base;
+
+        &:hover {
+          background-color: #000;
+        }
+      }
+
+      .section-parallax__bg {
+        background-image: url('../../img/bg/smart-bg-6.jpg');
+      }
+    }
+  }
+
+  .weight-skin {
+    section {
+      padding-top: 75px;
+      min-height: 400px;
+      height: 100%;
+      background-repeat: no-repeat;
+
+      &.weight {
+        background-position: top right;
+        background-image: url('../../img/bg/smart-bg-3_1.jpg');
+      }
+
+      &.skin {
+        background-position: top left;
+        background-image: url('../../img/bg/smart-bg-3_2.jpg');
+        padding-left: 30px;
+      }
+    }
+
+    h3 {
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    p {
+      line-height: 1.8;
+    }
+
+    .btn-outline-gray {
+      font-size: 1.5rem;
+      font-weight: 300;
+      font-family: 'Roboto', sans-serif;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      padding: 0;
+      position: relative;
+      top: -2px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .smart-category {
+    &__products {
+      &-title {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .smart-category {
+    &__section-animated {
+      padding-top: 40px;
+      min-height: 400px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: cover;
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      &.high-tech {
+        background-image: url('../../img/bg/smart-bg-tablet-0.jpg');
+      }
+
+      &.combination {
+        background-image: url('../../img/bg/smart-bg-tablet-1.jpg');
+      }
+
+      &.health {
+        background-image: url('../../img/bg/smart-bg-tablet-2.jpg');
+      }
+
+      &.resist {
+        background-image: url('../../img/bg/smart-bg-tablet-4.jpg');
+      }
+
+      &.media {
+        background-image: url('../../img/bg/smart-bg-tablet-5.jpg');
+      }
+
+      &.google-play {
+        background-image: url('../../img/bg/smart-bg-tablet-6.jpg');
+      }
+    }
+
+    .weight-skin {
+      section {
+        padding-top: 30px;
+        min-height: 200px;
+
+        &.weight {
+          background-image: url('../../img/bg/smart-bg-tablet-3_1.jpg');
+        }
+
+        &.skin {
+          background-image: url('../../img/bg/smart-bg-tablet-3_2.jpg');
+        }
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .btn-outline-gray {
+        width: 24px;
+        height: 24px;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .smart-category {
+    &__section-animated {
+      min-height: auto;
+      background-size: auto;
+      padding-bottom: 220px;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .reveal {
+        color: inherit;
+      }
+
+      p {
+        opacity: 1;
+      }
+
+      &.high-tech {
+        background-image: url('../../img/bg/smart-bg-mobile-0.jpg');
+      }
+
+      &.combination {
+        background-image: url('../../img/bg/smart-bg-mobile-1.jpg');
+      }
+
+      &.health {
+        background-image: url('../../img/bg/smart-bg-mobile-2.jpg');
+        padding-bottom: 160px;
+      }
+
+      &.resist {
+        background-image: url('../../img/bg/smart-bg-mobile-4.jpg');
+      }
+
+      &.media {
+        background-image: url('../../img/bg/smart-bg-mobile-5.jpg');
+      }
+
+      &.google-play {
+        background-image: url('../../img/bg/smart-bg-mobile-6.jpg');
+      }
+    }
+
+    .weight-skin {
+      section {
+        min-height: auto;
+        padding-top: 20px;
+
+        &.weight {
+          background-image: url('../../img/bg/smart-bg-mobile-3_1.jpg');
+        }
+
+        &.skin {
+          background-image: url('../../img/bg/smart-bg-mobile-3_2.jpg');
+          padding-left: 0;
+        }
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      .btn-outline-gray {
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

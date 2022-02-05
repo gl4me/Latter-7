@@ -1,0 +1,57 @@
+// cart: btn - back -> category
+
+.btn-gold {
+    background-color: transparent;
+    color: $info;
+    border: 1px solid $info;
+
+    &:hover {
+        color: $red;
+        border: 1px solid $red;
+    }
+
+    &:focus {
+        box-shadow: none ;
+    }
+}
+
+.btn-gold-mob {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    background: url('../../img/sprite/other.svg');
+    background-size: 675px;
+    background-position: -18px -2px;
+
+    &:hover {
+        background-position: -59px -2px;
+    }
+
+    &:focus {
+        box-shadow: none ;
+    }
+}
+
+// header-cart
+
+.header__top-cart {
+    padding: 44px 0 23px 0 ;
+    max-height: 107px;
+    border-bottom: 2px solid #181818;
+}
+
+@include media-breakpoint-down(lg) {
+    .header {
+      &__top-cart {
+        padding: 15px 0 9px 0 ;
+      }
+    }
+  }
+
+@include media-breakpoint-down(md) {
+    .header {
+      &__top-cart {
+        padding: 12px 0 ;
+      }
+    }
+}

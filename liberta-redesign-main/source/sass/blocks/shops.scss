@@ -1,0 +1,51 @@
+.shops {
+  &__list {
+    font-size: 14px;
+    font-weight: 500;
+    column-count: 6;
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: inherit;
+      transition: $transition-base;
+
+      &:hover {
+        color: $secondary;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .shops {
+    &__list {
+      column-count: 4;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .shops {
+    &__list {
+      column-count: 2;
+
+      li {
+        &:nth-child(n + 7) {
+          display: none;
+        }
+      }
+
+      &.expanded {
+        li {
+          &:nth-child(n + 7) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

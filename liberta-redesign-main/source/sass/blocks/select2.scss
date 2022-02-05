@@ -1,0 +1,114 @@
+.select2-container--default .select2-selection--single {
+  height: 38px;
+  background-color: $input-bg;
+  border-color: transparent;
+  border-top-color: $input-border-color;
+  border-radius: $border-radius;
+  font-size: $input-btn-font-size;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  color: $input-color;
+  font-weight: $input-font-weight;
+  padding-left: $input-btn-padding-x;
+  line-height: 35px;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__placeholder {
+  color: $text-muted;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 35px;
+}
+
+.select2-dropdown {
+  background-color: $input-bg;
+  border: none;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+.select2-container--default
+  .select2-dropdown
+  .select2-search--dropdown
+  .select2-search__field {
+  color: $input-color;
+  font-weight: $input-font-weight;
+  background-color: #fff;
+  border-color: transparent;
+  border-top-color: $input-border-color;
+  border-radius: $border-radius;
+  font-size: $input-btn-font-size;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.select2-container--default
+  .select2-dropdown
+  .select2-results
+  .select2-results__option:last-child {
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+.select2-results {
+  font-size: $input-btn-font-size;
+}
+
+
+.product-dark {
+
+  .select2-results__option {
+    padding: 6px 12px;
+    }
+
+  .select2-dropdown {
+    background-color: #1d1d1d !important;
+    color: #808080;
+    }
+
+  .select2-container--default 
+  .select2-selection--single {
+    height: 38px;
+    background-color: #111111 !important;
+    border-top: 1px solid #262626;
+    }
+
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+    font-size: 18px;
+    color: #fff;
+    }
+
+  .select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #111111 !important;
+    color: #808080;
+    }
+
+  .select2-container--default
+  .select2-results__option--selected {
+    background-color: transparent;
+    }
+
+  .select2-container--default.select2-container--open 
+  .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #fff transparent;
+  }
+
+  .select2-container--default 
+  .select2-selection--single 
+  .select2-selection__arrow b {
+    border-color: #fff transparent transparent transparent;
+    }
+}

@@ -1,0 +1,44 @@
+.salons {
+  padding: 50px 0;
+
+  &__heading {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      height: 391px;
+      width: 579px;
+      top: -38px;
+      right: -19px;
+      background-repeat: no-repeat;
+      background-image: url('../../img/bg/about-map.png');
+    }
+  }
+
+  &__count {
+    margin-top: -100px;
+  }
+
+  &__partners {
+    margin-top: 100px;
+    text-align: center;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .salons {
+    &__partners {
+      margin-top: 30px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .salons {
+    &__count {
+      margin-top: -80px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.category-map {
+  overflow: hidden;
+
+  &__text {
+    padding-top: 30px;
+    width: 75%;
+    line-height: 1.8;
+  }
+
+  &__footer {
+    a {
+      color: inherit;
+      font-weight: 500;
+      transition: $transition-base;
+
+      &:hover {
+        color: $secondary;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .category-map {
+    &__text {
+      width: 90%;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .category-map {
+    &__text {
+      width: 100%;
+    }
+
+    #map {
+      height: 450px !important;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.main-map {
+  text-align: center;
+  min-height: 415px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .btn-secondary {
+    width: 195px;
+    max-width: 100%;
+  }
+
+  .section-parallax__bg {
+    height: 637px;
+    background-image: url('../../img/bg/main-map.jpg');
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .main-map {
+    min-height: 280px;
+
+    .section-parallax__bg {
+      height: 280px;
+      background-size: cover;
+      background-image: url('../../img/bg/main-map-mobile.jpg');
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .main-map {
+    .h1 {
+      font-size: 26px;
+    }
+  }
+}

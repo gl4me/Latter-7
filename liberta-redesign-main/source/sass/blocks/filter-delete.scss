@@ -1,0 +1,7 @@
+.filter-delete {
+  transition: $transition-base;
+
+  &:hover {
+    color: $secondary;
+  }
+}

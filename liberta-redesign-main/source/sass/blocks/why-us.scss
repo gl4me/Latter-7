@@ -1,0 +1,42 @@
+.why-us {
+  &__list {
+    li {
+      &:not(:last-child) {
+        border-right: 2px solid $light;
+      }
+    }
+  }
+
+  &__item {
+    padding: 0 15px;
+
+    &-icon {
+      color: $primary;
+    }
+
+    &-title {
+      font-family: $font-family-sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .why-us {
+    &__list {
+      li {
+        &:not(:last-child) {
+          border-bottom: 2px solid $light;
+          border-right: 0;
+        }
+      }
+    }
+
+    &__item {
+      padding: 10px 0;
+    }
+  }
+}

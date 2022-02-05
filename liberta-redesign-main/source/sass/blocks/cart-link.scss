@@ -1,0 +1,32 @@
+.cart-link {
+  display: block;
+  color: inherit;
+  position: relative;
+  padding-right: 10px;
+
+  &:hover {
+    color: inherit;
+  }
+
+  &[href] {
+    transition: $transition-base;
+
+    &:hover,
+    &:focus {
+      color: $secondary;
+      text-decoration: none;
+    }
+  }
+
+  &__count {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    background-color: $secondary;
+    color: #fff;
+    border-radius: 10px;
+    height: 20px;
+    min-width: 20px;
+    text-align: center;
+  }
+}

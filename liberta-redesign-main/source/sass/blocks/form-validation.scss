@@ -1,0 +1,67 @@
+.form-dark { //product-system
+
+    .form-control.is-invalid,
+    .was-validated .form-control:invalid,
+    .parsley-error input { border-color: $red; } 
+
+    .form-control.is-valid,
+    .was-validated .form-control:valid,
+    .parsley-success input { border-color: $primary }
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid,
+.parsley-error input {
+    border-color: $red;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid,
+.parsley-success input {
+    border-color: $primary
+}
+
+.parsley-error > .error-desc {
+    display: block;
+}
+
+
+.error-desc {
+    display: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.warning {
+    position: absolute;
+    top: 0;
+    padding-left:5px;
+    right: -240px;
+    width: 220px;
+    padding-top: calc(0.375rem + 1px);
+    padding-bottom: calc(0.375rem + 1px);
+    font-size: 14px;
+    font-weight: 500;
+    color: $red;
+}
+
+.warning::before {
+ display: block;
+    position: absolute;
+    left: -20px;
+    content: " ";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='7.1631mm' height='7.1631mm' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 34 34' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%23E9416D%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Cg id='Слой_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cpath class='fil0' d='M17 0c-9,0 -17,8 -17,17 0,9 8,17 17,17 9,0 17,-8 17,-17 0,-9 -8,-17 -17,-17zm2 7l-1 13 -3 0 0 -13 4 0zm-2 20c-1,0 -2,-1 -2,-2 0,-1 1,-1 2,-1 1,0 2,0 2,1 0,1 -1,2 -2,2z'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+}
+
+
+@media (max-width: 992px) {
+    .parsley-error>.error-desc {
+        display: none;
+    } 
+}
+
+
+

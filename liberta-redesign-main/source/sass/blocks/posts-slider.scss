@@ -1,0 +1,29 @@
+.posts-slider {
+  .slick-track {
+    margin-left: 0;
+  }
+
+  .slick-list {
+    margin: 0 -8px;
+  }
+
+  &__item {
+    position: relative;
+    font-weight: 500;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    a {
+      display: block;
+      line-height: 1.2;
+      color: inherit;
+      cursor: pointer;
+      transition: $transition-base;
+
+      &:hover {
+        color: $secondary;
+        text-decoration: none;
+      }
+    }
+  }
+}

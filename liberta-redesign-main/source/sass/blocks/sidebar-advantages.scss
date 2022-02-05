@@ -1,0 +1,9 @@
+.sidebar-advantages {
+  padding: 30px 15px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.breadcrumb {
+  a {
+    color: $text-muted;
+    transition: $transition-base;
+
+    &:hover {
+      color: $secondary;
+      text-decoration: none;
+    }
+  }
+}

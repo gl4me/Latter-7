@@ -1,0 +1,61 @@
+<div class="sorting fs-14 mt-4">
+  <div class="row align-items-baseline">
+    <div class="col-xl-3">
+      <div class="d-flex">
+        <span class="text-muted mr-2">Cортировка:</span>
+        <div class="dropdown">
+          <button class="btn-unstyled dropdown-toggle" type="button" id="sorting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Тип сортировки
+          </button>
+          <div class="dropdown-menu fs-14" aria-labelledby="sorting">
+            <a class="dropdown-item cursor-pointer" data-url-category="https://liberta.ua/mirrors?sort=price">Сначала дешевые</a>
+            <a class="dropdown-item cursor-pointer" data-url-category="https://liberta.ua/mirrors?sort=-price">Сначала дорогие</a>
+            <a class="dropdown-item cursor-pointer" data-url-category="https://liberta.ua/mirrors?sort=new">Новинки</a>
+            <a class="dropdown-item cursor-pointer" data-url-category="https://liberta.ua/mirrors?sort=stock">Акция</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-9 mt-2 mt-xl-0 d-none d-md-block">
+      <div class="row align-items-baseline">
+        <div class="col d-flex">
+          <span class="text-muted text-nowrap mr-2">Вы выбрали:</span>
+          <ul class="row row-16 list-unstyled mb-n1">
+            <li class="sorting__selected-group col-auto mb-1">
+              <span>Форма:</span>
+              <div>
+                <span class="font-weight-500">Прямоугольные</span>
+                <button type="button" class="btn-unstyled filter-delete">✖</button>
+              </div>
+            </li>
+            <li class="sorting__selected-group col-auto mb-1">
+              <span>Опции:</span>
+              <div>
+                <span class="font-weight-500">С подсветкой</span>
+                <button type="button" class="btn-unstyled filter-delete">✖</button>
+              </div>
+              <div>
+                <span class="font-weight-500">Без подсветки</span>
+                <button type="button" class="btn-unstyled filter-delete">✖</button>
+              </div>
+              <div>
+                <span class="font-weight-500">Светильник</span>
+                <button type="button" class="btn-unstyled filter-delete">✖</button>
+              </div>
+            </li>
+            <li class="sorting__selected-group col-auto mb-1">
+              <span>Установка:</span>
+              <div>
+                <span class="font-weight-500">Настенные</span>
+                <button type="button" class="btn-unstyled filter-delete">✖</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-auto">
+          <a class="btn filter-clear">Очистить все фильтры</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

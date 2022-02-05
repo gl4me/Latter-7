@@ -1,0 +1,86 @@
+.service {
+  &__intro {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-image: url('../../img/bg/service.jpg');
+    min-height: 290px;
+  }
+
+  &__step {
+    padding-top: 1rem;
+
+    &-title {
+      float: left;
+      width: auto;
+    }
+
+    &-content {
+      display: none;
+      clear: both;
+    }
+
+    &--second {
+      border-top: 2px solid $border-color;
+      padding-bottom: 50px;
+
+      .service__step-title {
+        color: $border-color;
+      }
+    }
+
+    &.active {
+      padding-bottom: 50px;
+
+      .service__step-title {
+        color: inherit;
+      }
+
+      .service__step-content {
+        display: block;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .service {
+    &__intro {
+      min-height: 200px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .service {
+    &__intro {
+      min-height: auto;
+      background-image: none;
+    }
+
+    &__step {
+      &--first {
+        border-top: 2px solid $border-color;
+      }
+    }
+  }
+}
+
+.js-unloading-item {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+  margin: 5px 0;
+}
+
+.js-unloading-delete {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: url('https://liberta.ua/img/svg/close_modal_g.svg') no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  margin-left: 10px;
+}

@@ -1,0 +1,9 @@
+.filter-clear {
+  border-color: $input-border-color;
+  color: $text-muted;
+
+  &:hover {
+    border-color: lighten($danger, 30%);
+    color: $text-muted;
+  }
+}

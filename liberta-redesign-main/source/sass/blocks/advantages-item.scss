@@ -1,0 +1,26 @@
+.advantages-item {
+  padding: 30px 30px 40px;
+  height: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.8;
+
+  &__descr {
+    text-shadow: 1px 1px 4px #fff;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .advantages-item {
+    &__descr {
+      font-size: 14px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .advantages-item {
+    padding: 30px 20px;
+  }
+}

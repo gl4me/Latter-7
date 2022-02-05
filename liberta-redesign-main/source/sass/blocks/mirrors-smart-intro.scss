@@ -1,0 +1,46 @@
+.mirrors-smart-intro {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-image: url('../../img/bg/smart-main-bg.jpg');
+  background-color: #000;
+  color: #fff;
+  padding-top: 50px;
+  font-size: 1.5rem;
+
+  h1 {
+    font-size: 100px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .mirrors-smart-intro {
+    background-image: url('../../img/bg/smart-main-bg-tablet.jpg');
+    padding-top: 30px;
+    font-size: 20px;
+
+    h1 {
+      font-size: 72px;
+      line-height: 1;
+    }
+
+    &__icons {
+      img {
+        transform: scale(0.8);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .mirrors-smart-intro {
+    background-size: auto;
+    background-image: url('../../img/bg/smart-main-bg-mobile.jpg');
+
+    h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+  }
+}
